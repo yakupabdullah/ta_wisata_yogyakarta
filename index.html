@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<title>Tugas Kelompok</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<!--<link rel="stylesheet" href="font-awesome.min.css">-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="img/arumbay.png" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>MENU</b></h4> <hr />
+  </div>
+  
+  <div class="w3-bar-block">
+    <a href="#beranda" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-home fa-fw w3-margin-right"></i>Beranda</a> 
+    <a href="#tempatwisata" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Tempat Wisata</a> 
+	<a href="#tentang" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Tentang</a> 
+    <a href="#kontak" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Kontak</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"> menu</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="beranda">
+    <a href="#"><img src="img/arumbay.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+		<i class="glyphicon glyphicon-arrow_forward"></i> Menu  <hr />
+	</span>
+    <div class="w3-container">
+    <h2><b>Selamat Datang Di <br /> Website Wisata Yogyakarta</b></h2>
+    <div class="w3-section w3-bottombar w3-padding-10">
+		<p> Pada website ini kami menyediakan beberapa tempat wisata yang wajib anda kunjungi ketika datang ke Yogyakarta !</p>
+    </div>
+    </div>
+  </header>
+  
+	
+  <!-- daftar wisata atas -->
+  <div class="w3-row-padding" id="tempatwisata">
+  <h4><b> Daftar Tempat Wisata </b></h4>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="img/borobudur.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Candi Borobudur</b></p>
+        <p>Borobudur adalah sebuah candi Buddha yang terletak di Borobudur, Magelang, Jawa Tengah, Indonesia. Candi ini berlokasi di 
+			kurang lebih 100 km di sebelah barat daya Semarang, 86 km di sebelah barat Surakarta, dan 40 km di sebelah barat laut Yogyakarta.</p>
+		 <p><button class="w3-button w3-blue"> Lanjut Baca...</button></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="img/prambanan.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Candi Prambanan</b></p>
+        <p>Candi Prambanan / Candi Roro Jonggrang adalah candi Hindu terbesar di Indonesia yang dibangun pada abad ke-9 masehi. Candi ini dipersembahkan
+			untuk Trimurti, tiga dewa utama Hindu yaitu Brahma sebagai dewa pencipta, Wishnu sebagai dewa pemelihara, dan Siwa sebagai dewa pemusnah. </p>
+		<p><button class="w3-button w3-blue"> Lanjut Baca...</button></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="img/pinus.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Hutan Pinus</b></p>
+        <p>Keberadaan hutan pinus memang mudah sekali dijumpai karena memang tidak terlepas dari banyaknya perbukitan serta pegunungan
+			yang berada di Jawa Tengah. Belakangan ini, pesona keindahan hutan pinus memang lagi hits banget nih dikalangan pecinta fotografi. </p>
+		<p><button class="w3-button w3-blue"> Lanjut Baca...</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- daftar wisata bawah-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="img/paris.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Pantai Parang Tritis</b></p>
+        <p>Pantai Parangtritis berada di pesisir selatan Kota Yogyakarta ini termasuk destinasi Wisata di Bantul yang terkenal sampai mancanegara. 
+			dikarenakan lokasi pantainya yang cukup strategis, dan tidak terlalu jauh dari kota inilah membuat parangtritis lebih banyak pengunjung. </p>
+		<p><button class="w3-button w3-blue"> Lanjut Baca...</button></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="img/malioboro.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Malioboro</b></p>
+        <p>Malioboro adalah nama salah satu kawasan jalan dari tiga jalan di Kota Yogyakarta yang membentang dari Tugu Yogyakarta hingga ke perempatan 
+			Kantor Pos Yogyakarta. Secara keseluruhan terdiri dari Jalan Margo Utomo, Jalan Malioboro.</p>
+		<p><button class="w3-button w3-blue"> Lanjut Baca...</button></p>
+	 </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="img/tugu.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Tugu Yogya</b></p>
+        <p>Tugu Yogyakarta adalah sebuah tugu atau monumen yang sering dipakai sebagai simbol atau lambang dari kota Yogyakarta. Tugu ini dibangun oleh 
+			pemerintah Belanda setelah tugu sebelumnya runtuh akibat gempa yang terjadi waktu itu. Tugu sebelumnya yang bernama. </p>
+		<p><button class="w3-button w3-blue"> Lanjut Baca...</button></p>
+	  </div>
+    </div>
+  </div> <hr />
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="tentang">
+    <h4><b>Tentang Kami</b></h4>
+    <p> Dibawah Ini merupakan daftar NAMA dan NIM dari anggota kelompok kami !</p>
+    <hr>
+	
+	 <!-- Images of We -->
+	  <div class="w3-row-padding w3-padding-10">
+		<div class="w3-col m3">
+		  <img src="img/arumbay.png" alt="We" style="width:100%">
+		  <p align="center"> Yakup Abdullah / 155610071 <br /> Fron End </p>
+		</div>
+		<div class="w3-col m3" >
+		  <img src="img/arumbay.png" alt="We" style="width:100%">
+		   <p align="center"> Rizky F. Amin / 1556100xx <br /> Back End</p>
+		</div>
+		<div class="w3-col m3">
+		  <img src="img/arumbay.png" alt="We" style="width:100%">
+		   <p align="center"> Bayu Aji S / 155610070 <br /> Fron End </p>
+		</div>
+		<div class="w3-col m3">
+		  <img src="img/arumbay.png" alt="We" style="width:100%">
+		   <p align="center"> Nama Anda / xxxxxxxxx <br /> Back End</p>
+		</div>
+	  </div> <hr />
+          
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="kontak"><b>Kontak Kami</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>kelompokxxx@email.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>akakom yogyakarta</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>512312311</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+	  <div class="w3-black w3-center w3-padding-24">&copy;Kelompok xxx </div>
+  </div>
+  </footer>
+  
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('serv.js')
+        .then(function(registration) {
+          console.log('Service Worker registration successful with scope: ',
+          registration.scope);
+        })
+        .catch(function(err) {
+          console.log('Service Worker registration failed: ', err);
+        });
+    }
+</script>
+
+<!--<script src="scripts/main.js" async></script> -->
+
+</body>
+</html>
